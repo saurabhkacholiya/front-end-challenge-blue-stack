@@ -13,7 +13,14 @@ const makeSelectSelectedTab = () =>
     homeState => homeState.selectedTab,
   );
 
+const makeSelectModalStatus = () =>
+  createSelector(
+    selectHome,
+    homeState => homeState.modalStatus,
+  );
+
 export { 
   selectHome, 
   makeSelectSelectedTab,
+  makeSelectModalStatus,
 };

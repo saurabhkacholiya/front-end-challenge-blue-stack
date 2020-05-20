@@ -15,18 +15,33 @@ import { createStructuredSelector } from 'reselect';
 
 import { useInjectReducer } from 'utils/injectReducer';
 import reducer from './reducer'
-import { makeSelectSelectedTab } from "./selectors";
-import { changeCurrentTab } from "./actions";
+import { 
+  makeSelectSelectedTab,
+  makeSelectModalStatus,
+} from "./selectors";
+import { 
+  changeCurrentTab,
+  openModal,
+  closeModal,
+} from "./actions";
 
 import Header from '../../components/Header';
 import Title from '../../components/Title'
 import Tabs from '../../components/Tabs'
+import EventDetails from "../../components/EventDetails";
+import Modal from "../../components/Modal";
+
+import styled from "styled-components";
+
 
 const key = 'home';
 
 function HomePage({
   currentTab,
   changeCurrentTab,
+  openModal,
+  closeModal,
+  modalStatus,
 }) {
 
   useInjectReducer({ key, reducer });
@@ -43,18 +58,28 @@ function HomePage({
         onTabClick={onTabClick} 
         currentTab={currentTab}
       />
+      <EventDetails 
+        openModal={openModal}
+      />
+      <Modal 
+        closeModal={closeModal}
+        modalStatus={modalStatus}
+      />
     </>
   );
 }
 
 
 const mapStateToProps = createStructuredSelector({
-  currentTab : makeSelectSelectedTab()
+  currentTab : makeSelectSelectedTab(),
+  modalStatus: makeSelectModalStatus(),
 });
 
 export function mapDispatchToProps(dispatch) {
   return {
     changeCurrentTab : (data) => dispatch(changeCurrentTab(data)),
+    closeModal : () => dispatch(closeModal()),
+    openModal : () => dispatch(openModal()),
   };
 }
 

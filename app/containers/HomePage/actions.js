@@ -12,3 +12,17 @@ export function changeCurrentTab(selectedTab) {
     selectedTab,
   };
 }
+
+export const OPEN_MODAL = 'app/HomePage/OPEN_MODAL'
+export function openModal() {
+  return {
+    type: OPEN_MODAL,
+  };
+}
+
+export const CLOSE_MODAL = 'app/HomePage/CLOSE_MODAL'
+export function closeModal() {
+  return {
+    type: CLOSE_MODAL,
+  };
+}
