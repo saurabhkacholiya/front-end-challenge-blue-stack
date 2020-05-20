@@ -10,7 +10,7 @@ import {
 } from "./actions";
 
 export const initialState = {
-  selectedTab: 'UpcomingCampaigns'
+  selectedTab: 'LiveCampaigns'
 };
 
 /* eslint-disable default-case, no-param-reassign */

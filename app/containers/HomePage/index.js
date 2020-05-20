@@ -15,31 +15,46 @@ import { createStructuredSelector } from 'reselect';
 
 import { useInjectReducer } from 'utils/injectReducer';
 import reducer from './reducer'
+import { makeSelectSelectedTab } from "./selectors";
+import { changeCurrentTab } from "./actions";
 
 import Header from '../../components/Header';
 import Title from '../../components/Title'
+import Tabs from '../../components/Tabs'
 
 const key = 'home';
 
-function HomePage() {
+function HomePage({
+  currentTab,
+  changeCurrentTab,
+}) {
 
   useInjectReducer({ key, reducer });
 
+  const onTabClick = (data) => {
+    changeCurrentTab(data)
+  }
+
   return (
-    <main>
+    <>
       <Header />
       <Title />
-    </main>
+      <Tabs  
+        onTabClick={onTabClick} 
+        currentTab={currentTab}
+      />
+    </>
   );
 }
 
 
 const mapStateToProps = createStructuredSelector({
- 
+  currentTab : makeSelectSelectedTab()
 });
 
 export function mapDispatchToProps(dispatch) {
   return {
+    changeCurrentTab : (data) => dispatch(changeCurrentTab(data)),
   };
 }
 
