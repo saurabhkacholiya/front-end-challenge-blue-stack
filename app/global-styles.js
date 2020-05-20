@@ -15,11 +15,11 @@ const GlobalStyle = createGlobalStyle`
     font-family: 'Open Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif;
   }
 
-  #app {
-    min-height: 100%;
-    min-width: 100%;
+  #app{
+    width: 100%;
+    height: 100%;
   }
-
+  
   p,
   label {
     font-family: Georgia, Times, 'Times New Roman', serif;
