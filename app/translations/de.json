@@ -1,6 +1,6 @@
 {
-    "app.containers.HomePage.header": "This is written in en",
-    "app.containers.HomePage.message": "This is written in en",
+    "app.containers.HomePage.header": "This is written in de",
+    "app.containers.HomePage.message": "This is written in de",
     "boilerplate.components.Footer.license.message": "This project is licensed under the MIT license.",
     "boilerplate.containers.LocaleToggle.de": "de",
     "boilerplate.containers.LocaleToggle.en": "en"
