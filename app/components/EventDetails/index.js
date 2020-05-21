@@ -1,23 +1,10 @@
 import React from 'react';
 import styled from 'styled-components'
 import moment from 'moment'
-
 import csvFileImage from "../../images/file.png";
 import viewPriceImage from "../../images/Price.png";
 import calendarImage from "../../images/calendar.png";
 import reportImage from "../../images/statistics-report.png";
-
-const data = [
-  {
-    "name": "Test Whatsapp",
-    "region": "US",
-    "createdOn": 1559807714999,
-    "price": "Price info of Test Whatsapp",
-    "csv": "Some CSV link for Whatsapp",
-    "report": "Some report link for Whatsapp",
-    "image_url":"https://statics.sportskeeda.com/editor/2019/02/abc53-15496903982996-800.jpg" 
-  }
-]
 
 const size = {
   mobileS: '320px',
@@ -160,10 +147,13 @@ const Section = styled.section`
   }
 `
 
-
 export default function EventDetails({
   openModal,
+  data,
+  openScheduleCalendar,
+  diffBetweenCurrentDateAndGivenDate,
 }) {
+
   return (
     <>
     <Table>
@@ -182,7 +172,7 @@ export default function EventDetails({
                  <td>
                   <article className="flex-direction-column padding-left-10">
                    <span className="title-text" >{moment(item.createdOn).format('MMM YYYY DD')}</span>
-                   <span className="sub-title-text">5 days ago</span>
+                   <span className="sub-title-text">{diffBetweenCurrentDateAndGivenDate(item.createdOn).value}</span>
                   </article>
                  </td>
                  <td>
@@ -208,7 +198,7 @@ export default function EventDetails({
                       <ActionImage src={reportImage} />
                       <ImageText>Report</ImageText>
                      </article>
-                     <article>
+                     <article onClick={() => openScheduleCalendar({index,item})}>
                       <ActionImage src={calendarImage}/>
                       <ImageText>Schedule Again</ImageText>
                      </article>

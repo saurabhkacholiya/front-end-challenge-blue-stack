@@ -18,18 +18,25 @@ import reducer from './reducer'
 import { 
   makeSelectSelectedTab,
   makeSelectModalStatus,
+  makeSelectListData,
+  makeSelectScheduleCalendarStatus,
+  makeSelectSelectedDate,
 } from "./selectors";
 import { 
   changeCurrentTab,
   openModal,
   closeModal,
+  openScheduleCalendar,
+  setTime,
 } from "./actions";
+import { diffBetweenCurrentDateAndGivenDate } from "../../utils/commonFunction";
 
 import Header from '../../components/Header';
 import Title from '../../components/Title'
 import Tabs from '../../components/Tabs'
 import EventDetails from "../../components/EventDetails";
 import Modal from "../../components/Modal";
+import Calendar from "../../components/Calendar";
 
 import styled from "styled-components";
 
@@ -42,6 +49,11 @@ function HomePage({
   openModal,
   closeModal,
   modalStatus,
+  openScheduleCalendar,
+  listData,
+  calendarStatus,
+  setTime,
+  selectedDate,
 }) {
 
   useInjectReducer({ key, reducer });
@@ -60,10 +72,18 @@ function HomePage({
       />
       <EventDetails 
         openModal={openModal}
+        openScheduleCalendar={openScheduleCalendar}
+        data={listData}
+        diffBetweenCurrentDateAndGivenDate={diffBetweenCurrentDateAndGivenDate}
       />
       <Modal 
         closeModal={closeModal}
         modalStatus={modalStatus}
+      />
+      <Calendar 
+        calendarStatus={calendarStatus}
+        setTime={setTime}
+        selectedDate={selectedDate}
       />
     </>
   );
@@ -73,6 +93,9 @@ function HomePage({
 const mapStateToProps = createStructuredSelector({
   currentTab : makeSelectSelectedTab(),
   modalStatus: makeSelectModalStatus(),
+  listData : makeSelectListData(),
+  calendarStatus: makeSelectScheduleCalendarStatus(),
+  selectedDate : makeSelectSelectedDate(),
 });
 
 export function mapDispatchToProps(dispatch) {
@@ -80,6 +103,8 @@ export function mapDispatchToProps(dispatch) {
     changeCurrentTab : (data) => dispatch(changeCurrentTab(data)),
     closeModal : () => dispatch(closeModal()),
     openModal : () => dispatch(openModal()),
+    openScheduleCalendar: (data) => dispatch(openScheduleCalendar(data)),
+    setTime: (data) => dispatch(setTime(data)),
   };
 }
 

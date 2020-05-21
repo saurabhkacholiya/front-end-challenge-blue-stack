@@ -2,10 +2,11 @@ import React from 'react';
 import styled from 'styled-components'
 
 const ModalWrapper = styled.div`
-    position: absolute;
+    position: fixed;
     height: 100%;
     width: 100%;
     background-color: rgba(0,0,0,0.2);
+    overflow: auto;
     .modal-details {
         background: #FFFFFF;
         border-radius: 3px;
