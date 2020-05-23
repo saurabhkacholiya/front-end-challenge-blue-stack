@@ -6,6 +6,7 @@
 
 export const dummyData = [
   {
+    "key" : "1",
     "name": "Test Whatsapp",
     "region": "US",
     "createdOn": 1559807714999,
@@ -15,6 +16,7 @@ export const dummyData = [
     "image_url":"https://statics.sportskeeda.com/editor/2019/02/abc53-15496903982996-800.jpg" 
   },
   {
+    "key" : "2",
     "name": "Test Whatsapp",
     "region": "US",
     "createdOn": 1559807714999,
@@ -24,6 +26,7 @@ export const dummyData = [
     "image_url":"https://statics.sportskeeda.com/editor/2019/02/abc53-15496903982996-800.jpg" 
   },
   {
+    "key" : "3",
     "name": "Test Whatsapp",
     "region": "US",
     "createdOn": 1559807714999,
@@ -31,7 +34,9 @@ export const dummyData = [
     "csv": "Some CSV link for Whatsapp",
     "report": "Some report link for Whatsapp",
     "image_url":"https://statics.sportskeeda.com/editor/2019/02/abc53-15496903982996-800.jpg" 
-  },{
+  },
+  {
+    "key" : "4",
     "name": "Test Whatsapp",
     "region": "US",
     "createdOn": 1559807714999,
@@ -66,10 +71,10 @@ export function closeModal() {
 }
 
 export const SCHEDULE_CALENDAR = 'app/HomePage/SCHEDULE_CALENDAR'
-export function openScheduleCalendar(obj) {
+export function openScheduleCalendar(key) {
   return {
     type: SCHEDULE_CALENDAR,
-    obj,
+    key,
   };
 }
 

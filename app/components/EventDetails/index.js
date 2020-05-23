@@ -168,7 +168,7 @@ export default function EventDetails({
           <tbody>
             {
               data.map((item,index) => (
-               <tr key={index}>
+               <tr key={item.key}>
                  <td>
                   <article className="flex-direction-column padding-left-10">
                    <span className="title-text" >{moment(item.createdOn).format('MMM YYYY DD')}</span>
@@ -198,7 +198,7 @@ export default function EventDetails({
                       <ActionImage src={reportImage} />
                       <ImageText>Report</ImageText>
                      </article>
-                     <article onClick={() => openScheduleCalendar({index,item})}>
+                     <article onClick={() => openScheduleCalendar(item.key)}>
                       <ActionImage src={calendarImage}/>
                       <ImageText>Schedule Again</ImageText>
                      </article>

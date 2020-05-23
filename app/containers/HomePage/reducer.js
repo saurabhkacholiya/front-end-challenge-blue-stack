@@ -18,7 +18,7 @@ export const initialState = {
   selectedTab: 'LiveCampaigns',
   modalStatus: false,
   scheduleCalendarStatus: false,
-  currentSelectedRow: null,
+  currentSelectedRowKey: null,
   listData : [...dummyData],
   selectedDate: new Date(),
 };
@@ -37,11 +37,19 @@ const homePageReducer = (state = initialState, action) =>
           draft.modalStatus = false
         break;
       case SCHEDULE_CALENDAR: 
-          draft.currentSelectedRow = action.obj
+          draft.currentSelectedRowKey = action.key
           draft.scheduleCalendarStatus= true
         break;
       case SET_TIME:
-          draft.listData[state.currentSelectedRow.index]['createdOn'] = action.time
+          draft.listData = draft.listData.map(item => {
+            if(item.key === state.currentSelectedRowKey){
+              return {
+                ...item,
+                "createdOn": action.time,
+              }
+            }
+              return item
+          })
           draft.selectedDate = new Date(action.time)
           draft.scheduleCalendarStatus= false
         break;
