@@ -15,7 +15,7 @@ import {
 } from "./actions";
 
 export const initialState = {
-  selectedTab: 'LiveCampaigns',
+  selectedTab: 'PastCampaigns',
   modalStatus: false,
   scheduleCalendarStatus: false,
   currentSelectedRowKey: null,

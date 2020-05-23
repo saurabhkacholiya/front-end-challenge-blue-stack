@@ -38,6 +38,8 @@ import EventDetails from "../../components/EventDetails";
 import Modal from "../../components/Modal";
 import Calendar from "../../components/Calendar";
 
+import LocaleToggle from "../LocaleToggle";
+
 import styled from "styled-components";
 
 

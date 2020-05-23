@@ -1,6 +1,7 @@
 import React from 'react';
 import LogoImage from '../../images/logo.png';
 import styled from 'styled-components'
+import LocaleToggle from "../../containers/LocaleToggle";
 
 const HeaderDiv = styled.header`
     position: absolute;
@@ -16,6 +17,12 @@ const HeaderDiv = styled.header`
         left: 20px;
         top: 15px;
     }
+    section{
+      position: absolute;
+      right: 20px;
+      top: 50%;
+      transform: translate(-50%,-50%);        
+    }
 `
 
 
@@ -25,6 +32,9 @@ export default function header() {
       <figure>
         <img src={LogoImage} alt="Logo Image"/>
       </figure>
+      <section>
+        <LocaleToggle />
+      </section>
     </HeaderDiv>
   );
 }
