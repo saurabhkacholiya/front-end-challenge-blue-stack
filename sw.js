@@ -8,7 +8,7 @@ var __wpo = {
     "additional": [
       "/front-end-challenge-blue-stack/npm.intl.62ffc0b470803cf6ab21.chunk.js",
       "/front-end-challenge-blue-stack/npm.webpack.b7e1ba51e7f6ecb13483.chunk.js",
-      "/front-end-challenge-blue-stack/main.66dc9e8df8b8137dd3e1.chunk.js",
+      "/front-end-challenge-blue-stack/main.55a7a43b9d5cec345bfe.chunk.js",
       "/front-end-challenge-blue-stack/npm.babel.a92a0a73e5394ac646f0.chunk.js",
       "/front-end-challenge-blue-stack/npm.connected-react-router.b89cc15901e75246dadc.chunk.js",
       "/front-end-challenge-blue-stack/npm.intl-messageformat.24f5930db0539fe019e4.chunk.js",
@@ -31,7 +31,7 @@ var __wpo = {
     "5e53ef208f3fa79a48f8374488f473c76e1233de": "/front-end-challenge-blue-stack/favicon.ico",
     "dd0a1da9fa779d9ab7980ea9cf6b1801303aa7fd": "/front-end-challenge-blue-stack/npm.intl.62ffc0b470803cf6ab21.chunk.js",
     "7e8b365af072c84395f57e0f38da74b78401b795": "/front-end-challenge-blue-stack/npm.webpack.b7e1ba51e7f6ecb13483.chunk.js",
-    "40475b4291ebce990e0923e821a7d03ec5d19684": "/front-end-challenge-blue-stack/main.66dc9e8df8b8137dd3e1.chunk.js",
+    "2618e94481e69538703fa254950982068c0520ff": "/front-end-challenge-blue-stack/main.55a7a43b9d5cec345bfe.chunk.js",
     "fd00f7528eba84d15bd92d2768a8136ed435452e": "/front-end-challenge-blue-stack/npm.babel.a92a0a73e5394ac646f0.chunk.js",
     "2763f82d13ab81b83be58d7be642e1675f0db221": "/front-end-challenge-blue-stack/npm.connected-react-router.b89cc15901e75246dadc.chunk.js",
     "80e27df58610affba59dd338a9061e45bb4939ac": "/front-end-challenge-blue-stack/npm.intl-messageformat.24f5930db0539fe019e4.chunk.js",
@@ -47,11 +47,11 @@ var __wpo = {
     "e2fcc1b7415150411ab8176b465c0a85498333df": "/front-end-challenge-blue-stack/15.077c7ee45ba7d77f582a.chunk.js",
     "3237b6c429918192c6d88f62228387d87b63b2fe": "/front-end-challenge-blue-stack/16.1c8810d6d39b08d0f950.chunk.js",
     "73361e27c453f7b1dd0e0150c1885f3d324eeefa": "/front-end-challenge-blue-stack/17.d6848cc7cc19eb7fbec4.chunk.js",
-    "3df92c22e189e4111cbf114e159d13687fef6625": "/front-end-challenge-blue-stack/"
+    "3bfa33cf53150594e1dcdba7224d003c730b4775": "/front-end-challenge-blue-stack/"
   },
   "strategy": "changed",
   "responseStrategy": "cache-first",
-  "version": "5/23/2020, 11:51:50 PM",
+  "version": "5/23/2020, 11:54:36 PM",
   "name": "webpack-offline",
   "pluginVersion": "5.0.6",
   "relativePaths": false
