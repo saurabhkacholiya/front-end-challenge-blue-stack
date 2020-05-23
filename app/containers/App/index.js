@@ -19,7 +19,7 @@ export default function App() {
   return (
     <div>
       <Switch>
-        <Route exact path="/front-end-challenge-blue-stack" component={HomePage} />
+        <Route exact path="/" component={HomePage} />
         <Route component={NotFoundPage} />
       </Switch>
       <GlobalStyle />
