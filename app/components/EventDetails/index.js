@@ -147,12 +147,29 @@ const Section = styled.section`
   }
 `
 
+const EmptyList = styled.section`
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+`
+
 export default function EventDetails({
   openModal,
   data,
   openScheduleCalendar,
   diffBetweenCurrentDateAndGivenDate,
 }) {
+
+  if(!data.length) {
+    return (
+      <EmptyList>
+          <span>
+            <strong>List is Empty!!</strong>
+          </span>
+      </EmptyList>
+    )
+  }
 
   return (
     <>
