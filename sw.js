@@ -1,57 +1,57 @@
 var __wpo = {
   "assets": {
     "main": [
-      "/favicon.ico",
-      "/runtime.2b609ae4a1f2b5cd3abd.js",
-      "/"
+      "/front-end-challenge-blue-stack/favicon.ico",
+      "/front-end-challenge-blue-stack/runtime.80e5886a51f0fc7852d3.js",
+      "/front-end-challenge-blue-stack/"
     ],
     "additional": [
-      "/npm.intl.62ffc0b470803cf6ab21.chunk.js",
-      "/npm.webpack.b7e1ba51e7f6ecb13483.chunk.js",
-      "/main.5e902c404c8424af1c1c.chunk.js",
-      "/npm.babel.a92a0a73e5394ac646f0.chunk.js",
-      "/npm.connected-react-router.b89cc15901e75246dadc.chunk.js",
-      "/npm.intl-messageformat.24f5930db0539fe019e4.chunk.js",
-      "/npm.intl-relativeformat.040f0004152853f6c4d2.chunk.js",
-      "/npm.lodash.0c0634bbe5354a393b4e.chunk.js",
-      "/npm.moment.bb90ee313368915834f8.chunk.js",
-      "/npm.react-app-polyfill.a512adaad14151170c55.chunk.js",
-      "/npm.react-calendar.c445087356afd72ea999.chunk.js",
-      "/npm.react-intl.cae773f0a39994aa2dd4.chunk.js",
-      "/npm.react-redux.9ff69fc9264c5519d25c.chunk.js",
-      "/npm.redux-saga.41dc88093c5f2fa6ee92.chunk.js",
-      "/15.077c7ee45ba7d77f582a.chunk.js",
-      "/16.800c65f56553a6bb7968.chunk.js",
-      "/17.d6848cc7cc19eb7fbec4.chunk.js"
+      "/front-end-challenge-blue-stack/npm.intl.62ffc0b470803cf6ab21.chunk.js",
+      "/front-end-challenge-blue-stack/npm.webpack.b7e1ba51e7f6ecb13483.chunk.js",
+      "/front-end-challenge-blue-stack/main.66dc9e8df8b8137dd3e1.chunk.js",
+      "/front-end-challenge-blue-stack/npm.babel.a92a0a73e5394ac646f0.chunk.js",
+      "/front-end-challenge-blue-stack/npm.connected-react-router.b89cc15901e75246dadc.chunk.js",
+      "/front-end-challenge-blue-stack/npm.intl-messageformat.24f5930db0539fe019e4.chunk.js",
+      "/front-end-challenge-blue-stack/npm.intl-relativeformat.040f0004152853f6c4d2.chunk.js",
+      "/front-end-challenge-blue-stack/npm.lodash.0c0634bbe5354a393b4e.chunk.js",
+      "/front-end-challenge-blue-stack/npm.moment.bb90ee313368915834f8.chunk.js",
+      "/front-end-challenge-blue-stack/npm.react-app-polyfill.a512adaad14151170c55.chunk.js",
+      "/front-end-challenge-blue-stack/npm.react-calendar.c445087356afd72ea999.chunk.js",
+      "/front-end-challenge-blue-stack/npm.react-intl.cae773f0a39994aa2dd4.chunk.js",
+      "/front-end-challenge-blue-stack/npm.react-redux.9ff69fc9264c5519d25c.chunk.js",
+      "/front-end-challenge-blue-stack/npm.redux-saga.41dc88093c5f2fa6ee92.chunk.js",
+      "/front-end-challenge-blue-stack/15.077c7ee45ba7d77f582a.chunk.js",
+      "/front-end-challenge-blue-stack/16.6034045e6580999510bb.chunk.js",
+      "/front-end-challenge-blue-stack/17.d6848cc7cc19eb7fbec4.chunk.js"
     ],
     "optional": []
   },
   "externals": [],
   "hashesMap": {
-    "5e53ef208f3fa79a48f8374488f473c76e1233de": "/favicon.ico",
-    "dd0a1da9fa779d9ab7980ea9cf6b1801303aa7fd": "/npm.intl.62ffc0b470803cf6ab21.chunk.js",
-    "7e8b365af072c84395f57e0f38da74b78401b795": "/npm.webpack.b7e1ba51e7f6ecb13483.chunk.js",
-    "a275811c795b774eca5726ae6d8c9c221cc92d1b": "/main.5e902c404c8424af1c1c.chunk.js",
-    "fd00f7528eba84d15bd92d2768a8136ed435452e": "/npm.babel.a92a0a73e5394ac646f0.chunk.js",
-    "2763f82d13ab81b83be58d7be642e1675f0db221": "/npm.connected-react-router.b89cc15901e75246dadc.chunk.js",
-    "80e27df58610affba59dd338a9061e45bb4939ac": "/npm.intl-messageformat.24f5930db0539fe019e4.chunk.js",
-    "a8cf6c54036b3a7de6512162c0d2154d3ae36815": "/npm.intl-relativeformat.040f0004152853f6c4d2.chunk.js",
-    "48d7177420fe3851004eb3ae0d8df90511416b06": "/npm.lodash.0c0634bbe5354a393b4e.chunk.js",
-    "bd04ca910bfb9e305f7b35a353a57a6504af8e75": "/npm.moment.bb90ee313368915834f8.chunk.js",
-    "8e4f710cb68832a9bb8c2e24464ea6560e2142b1": "/npm.react-app-polyfill.a512adaad14151170c55.chunk.js",
-    "b4b8e74a166941f8b923c2740aac6870c339adab": "/npm.react-calendar.c445087356afd72ea999.chunk.js",
-    "ee7adbce5547e6521fab4340ddfc8dd878bcdc9b": "/npm.react-intl.cae773f0a39994aa2dd4.chunk.js",
-    "bb73c7d3293e5d2cedb650cce35a389aee50c52f": "/npm.react-redux.9ff69fc9264c5519d25c.chunk.js",
-    "5af9a08af0c99527d10ebdc8bb9efcd25b0c8761": "/npm.redux-saga.41dc88093c5f2fa6ee92.chunk.js",
-    "4d6f782cac58be0e68afc8cf11e9c7cce9c7d5b1": "/runtime.2b609ae4a1f2b5cd3abd.js",
-    "e2fcc1b7415150411ab8176b465c0a85498333df": "/15.077c7ee45ba7d77f582a.chunk.js",
-    "54e7186fce809284d4cf9b75709c648cb6b629c3": "/16.800c65f56553a6bb7968.chunk.js",
-    "73361e27c453f7b1dd0e0150c1885f3d324eeefa": "/17.d6848cc7cc19eb7fbec4.chunk.js",
-    "c907bd38051d6993d497b8aa55c075241f7f88ba": "/"
+    "5e53ef208f3fa79a48f8374488f473c76e1233de": "/front-end-challenge-blue-stack/favicon.ico",
+    "dd0a1da9fa779d9ab7980ea9cf6b1801303aa7fd": "/front-end-challenge-blue-stack/npm.intl.62ffc0b470803cf6ab21.chunk.js",
+    "7e8b365af072c84395f57e0f38da74b78401b795": "/front-end-challenge-blue-stack/npm.webpack.b7e1ba51e7f6ecb13483.chunk.js",
+    "40475b4291ebce990e0923e821a7d03ec5d19684": "/front-end-challenge-blue-stack/main.66dc9e8df8b8137dd3e1.chunk.js",
+    "fd00f7528eba84d15bd92d2768a8136ed435452e": "/front-end-challenge-blue-stack/npm.babel.a92a0a73e5394ac646f0.chunk.js",
+    "2763f82d13ab81b83be58d7be642e1675f0db221": "/front-end-challenge-blue-stack/npm.connected-react-router.b89cc15901e75246dadc.chunk.js",
+    "80e27df58610affba59dd338a9061e45bb4939ac": "/front-end-challenge-blue-stack/npm.intl-messageformat.24f5930db0539fe019e4.chunk.js",
+    "a8cf6c54036b3a7de6512162c0d2154d3ae36815": "/front-end-challenge-blue-stack/npm.intl-relativeformat.040f0004152853f6c4d2.chunk.js",
+    "48d7177420fe3851004eb3ae0d8df90511416b06": "/front-end-challenge-blue-stack/npm.lodash.0c0634bbe5354a393b4e.chunk.js",
+    "bd04ca910bfb9e305f7b35a353a57a6504af8e75": "/front-end-challenge-blue-stack/npm.moment.bb90ee313368915834f8.chunk.js",
+    "8e4f710cb68832a9bb8c2e24464ea6560e2142b1": "/front-end-challenge-blue-stack/npm.react-app-polyfill.a512adaad14151170c55.chunk.js",
+    "b4b8e74a166941f8b923c2740aac6870c339adab": "/front-end-challenge-blue-stack/npm.react-calendar.c445087356afd72ea999.chunk.js",
+    "ee7adbce5547e6521fab4340ddfc8dd878bcdc9b": "/front-end-challenge-blue-stack/npm.react-intl.cae773f0a39994aa2dd4.chunk.js",
+    "bb73c7d3293e5d2cedb650cce35a389aee50c52f": "/front-end-challenge-blue-stack/npm.react-redux.9ff69fc9264c5519d25c.chunk.js",
+    "5af9a08af0c99527d10ebdc8bb9efcd25b0c8761": "/front-end-challenge-blue-stack/npm.redux-saga.41dc88093c5f2fa6ee92.chunk.js",
+    "385d9d735198c8765e27e4f44de443e06965d197": "/front-end-challenge-blue-stack/runtime.80e5886a51f0fc7852d3.js",
+    "e2fcc1b7415150411ab8176b465c0a85498333df": "/front-end-challenge-blue-stack/15.077c7ee45ba7d77f582a.chunk.js",
+    "5538539ce0d4e3d0252a7452688e1dad132d6102": "/front-end-challenge-blue-stack/16.6034045e6580999510bb.chunk.js",
+    "73361e27c453f7b1dd0e0150c1885f3d324eeefa": "/front-end-challenge-blue-stack/17.d6848cc7cc19eb7fbec4.chunk.js",
+    "cd2ce88f9816c205cb9241ff96c3ed4942c828e9": "/front-end-challenge-blue-stack/"
   },
   "strategy": "changed",
   "responseStrategy": "cache-first",
-  "version": "5/23/2020, 11:38:36 PM",
+  "version": "5/23/2020, 11:48:56 PM",
   "name": "webpack-offline",
   "pluginVersion": "5.0.6",
   "relativePaths": false
@@ -136,7 +136,7 @@ var __wpo = {
 /******/ 	__webpack_require__.o = function(object, property) { return Object.prototype.hasOwnProperty.call(object, property); };
 /******/
 /******/ 	// __webpack_public_path__
-/******/ 	__webpack_require__.p = "/";
+/******/ 	__webpack_require__.p = "/front-end-challenge-blue-stack/";
 /******/
 /******/
 /******/ 	// Load entry module and return exports
