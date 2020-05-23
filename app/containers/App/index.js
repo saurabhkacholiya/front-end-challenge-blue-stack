@@ -21,10 +21,9 @@ export default function App() {
   return (
     <div>
       <Switch>
-        <Route exact path="/home" component={HomePage} />
+        <Route exact path="/" component={HomePage} />
         <Route component={NotFoundPage} />
       </Switch>
-      {/* <Footer /> */}
       <GlobalStyle />
     </div>
   );
