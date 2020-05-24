@@ -1,5 +1,5 @@
 {
-    "app.containers.HomePage.header": "This is written in en",
+    "app.containers.HomePage.title": "Manage Campaigns",
     "app.containers.HomePage.message": "This is written in en",
     "boilerplate.components.Footer.license.message": "This project is licensed under the MIT license.",
     "boilerplate.containers.LocaleToggle.de": "de",
