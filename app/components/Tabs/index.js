@@ -39,7 +39,7 @@ const SelectedTab = styled.span`
       position: absolute;
       height: 4px;
       background: #83A515;
-      bottom: 15px;
+      bottom: 1px;
       width: ${props => `${props.width}px`};
       left: 0;
     }
@@ -51,11 +51,14 @@ const SelectedTab = styled.span`
 `
 const BorderDiv = styled.div`
   position: absolute;
-  width: 100%;
+  width: 350px;
   height: 1px;
   background: #F1F1F4;
   transform: matrix(1, 0, 0, -1, 0, 0);
-  bottom: 15px;
+  bottom: 0px;
+  @media (min-width: 600px) {
+    width: 1000px;
+  }
 `
 export default function Tabs({
     currentTab,

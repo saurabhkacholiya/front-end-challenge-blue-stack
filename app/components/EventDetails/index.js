@@ -5,6 +5,8 @@ import csvFileImage from "../../images/file.png";
 import viewPriceImage from "../../images/Price.png";
 import calendarImage from "../../images/calendar.png";
 import reportImage from "../../images/statistics-report.png";
+import { FormattedMessage } from 'react-intl';
+import messages from "./messages";
 
 const size = {
   mobileS: '320px',
@@ -22,7 +24,7 @@ const device = {
 
 const Table = styled.table`
   position: absolute;
-  top: 200px;
+  top: 210px;
   border-collapse: collapse;
   margin: 20px;
   width: 350px;
@@ -189,7 +191,9 @@ export default function EventDetails({
     return (
       <EmptyList>
           <span>
-            <strong>List is Empty!!</strong>
+            <strong>
+              <FormattedMessage {...messages.Empty} />
+            </strong>
           </span>
       </EmptyList>
     )
@@ -200,10 +204,10 @@ export default function EventDetails({
     <Table>
           <thead>
             <tr>
-              <th>DATE</th>
-              <th>CAMPAIGN</th>
-              <th>VIEW</th>
-              <th>ACTIONS</th>
+              <th>{<FormattedMessage {...messages.date} />}</th>
+              <th>{<FormattedMessage {...messages.campaign} />}</th>
+              <th>{<FormattedMessage {...messages.view} />}</th>
+              <th>{<FormattedMessage {...messages.action} />}</th>
             </tr>
           </thead>
           <tbody>
@@ -227,7 +231,9 @@ export default function EventDetails({
                  </td>
                  <td onClick={openModal}>
                    <ActionImage src={viewPriceImage}/>
-                   <ImageText className="padding-left-10">View Pricing</ImageText>
+                   <ImageText className="padding-left-10">
+                      <FormattedMessage {...messages.viewPrice} />
+                    </ImageText>
                  </td>
                  <td>
                   <Section>
@@ -237,11 +243,15 @@ export default function EventDetails({
                      </article>
                      <article>
                       <ActionImage src={reportImage} />
-                      <ImageText>Report</ImageText>
+                      <ImageText>
+                        <FormattedMessage {...messages.report} />
+                      </ImageText>
                      </article>
                      <article onClick={() => openScheduleCalendar(item.key)}>
                       <ActionImage src={calendarImage}/>
-                      <ImageText>Schedule Again</ImageText>
+                      <ImageText>
+                        <FormattedMessage {...messages.scheduleAgain} />
+                      </ImageText>
                      </article>
                   </Section>
                  </td>

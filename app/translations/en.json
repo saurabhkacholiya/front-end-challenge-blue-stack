@@ -6,5 +6,13 @@
     "boilerplate.containers.LocaleToggle.en": "en",
     "app.containers.tabs.UpcomingCampaigns": "Upcoming Campaigns",
     "app.containers.tabs.LiveCampaigns": "Live Campaigns",
-    "app.containers.tabs.PastCampaigns": "Past Campaigns"
+    "app.containers.tabs.PastCampaigns": "Past Campaigns",
+    "app.containers.EventDetails.Empty" :"List is Empty!!",
+    "app.containers.EventDetails.date" :"DATE",
+    "app.containers.EventDetails.campaign" :"CAMPAIGN",
+    "app.containers.EventDetails.view" :"VIEW",
+    "app.containers.EventDetails.action" :"ACTIONS",
+    "app.containers.EventDetails.viewPrice" :"View Pricing",
+    "app.containers.EventDetails.report" :"Report",
+    "app.containers.EventDetails.scheduleAgain" :"Schedule Again"
 }
