@@ -1,5 +1,7 @@
 import React from 'react';
 import styled from 'styled-components'
+import { FormattedMessage } from 'react-intl';
+import messages from "./messages";
 
 const TabWrapper = styled.div`
   display: flex;
@@ -20,7 +22,7 @@ const Tab = styled.span`
     font-size: 15px;
     padding: 0 10px 0 0;
     @media (min-width: 600px) {
-      width: 178px;
+      min-width: 178px;
       font-size: 18px;
     }
 
@@ -43,7 +45,7 @@ const SelectedTab = styled.span`
     }
 
     @media (min-width: 600px) {
-      width: 178px;
+      min-width: 178px;
       font-size: 18px;
     }
 `
@@ -64,31 +66,31 @@ export default function Tabs({
             {
                 currentTab === "UpcomingCampaigns"
                     ? <SelectedTab width={135}>
-                        Upcoming Campaigns
+                        <FormattedMessage {...messages.UpcomingCampaigns} />
                         <span className="border" />
                       </SelectedTab>
                     : <Tab onClick={() => onTabClick("UpcomingCampaigns")}>
-                        Upcoming Campaigns
+                        <FormattedMessage {...messages.UpcomingCampaigns} />
                       </Tab>
             }
             {
                 currentTab === "LiveCampaigns"
                     ? <SelectedTab width={102}>
-                        Live Campaign
+                        <FormattedMessage {...messages.LiveCampaigns} />
                             <span className="border" />
                      </SelectedTab>
                     : <Tab onClick={() => onTabClick("LiveCampaigns")}>
-                        Live Campaigns
+                        <FormattedMessage {...messages.LiveCampaigns} />
                       </Tab>
             }
             {
                 currentTab === "PastCampaigns"
                     ? <SelectedTab width={100}>
-                        Past Campaigns
+                        <FormattedMessage {...messages.PastCampaigns} />
                             <span className="border" />
                       </SelectedTab>
                     : <Tab onClick={() => onTabClick("PastCampaigns")}>
-                        Past Campaigns
+                        <FormattedMessage {...messages.PastCampaigns} />
                       </Tab>
             }
             <BorderDiv />
