@@ -32,4 +32,4 @@
 <img src="app/images/WebViewGer.png" alt="demo image" width="1000px" height="600px">
 
 - Mobile View 
-<img src="app/images/Mobileview.jpeg" width="250" height="450">
+<img src="app/images/Mobileview.png" width="250" height="450">
