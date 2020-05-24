@@ -10,12 +10,14 @@ const size = {
   mobileS: '320px',
   mobileM: '375px',
   mobileL: '425px',
+  fullView: '600px',
 }
 
 const device = {
   mobileS: `(min-width: ${size.mobileS})`,
   mobileM: `(min-width: ${size.mobileM})`,
   mobileL: `(min-width: ${size.mobileL})`,
+  fullView: `(min-width: ${size.fullView})`,
 };
 
 const Table = styled.table`
@@ -44,45 +46,7 @@ const Table = styled.table`
     font-size: 16px;
   }
 
-  @media ${device.mobileM} {
-    table, thead, tbody, th, td, tr { 
-		  display: block; 
-	  }
-
-    thead tr { 
-      position: absolute;
-      top: -9999px;
-      left: -9999px;
-	  } 
-
-    tr{
-      border: 1px solid #ECECEC;
-    }
-    td { 
-      /* Behave  like a "row" */
-      border: none;
-      border-bottom: 1px solid #ECECEC; 
-      position: relative;
-      padding-left: 50%; 
-      line-height: 35px;
-	  }
-
-    td:before { 
-      position: absolute;
-      top: 2px;
-      left: 6px;
-      padding-right: 10px;
-      white-space: nowrap;
-	  }
-
-    /* Label the data*/
-	    td:nth-of-type(1):before { content: "DATE"; }
-	    td:nth-of-type(2):before { content: "CAMPAIGN"; }
-	    td:nth-of-type(3):before { content: "VIEW"; }
-	    td:nth-of-type(4):before { content: "ACTIONS"; }
-
-      
-    .flex-direction-column{
+  .flex-direction-column{
       display: flex;
       flex-direction: column;
     }
@@ -108,6 +72,7 @@ const Table = styled.table`
       font-size: 16px;
       line-height: 24px;
       color: #2B416C;
+      text-align: left;
     }
 
     .sub-title-text{
@@ -117,8 +82,63 @@ const Table = styled.table`
       font-size: 14px;
       line-height: 24px;
       color: #7788A3;
+      text-align: left;
     }
 
+  @media ${device.fullView} {
+      position: absolute;
+      width: 1000px;
+      height: 48px;
+      tr{
+        height: 48px;
+      }
+      th{
+        padding-left: 10px;
+      }
+      td{
+        text-align: left;
+        height: 70px;
+      }
+      .flex-direction-row{
+        justify-content: flex-start;
+      }
+  }
+
+  @media (max-width: 425px ) {
+    table, thead, tbody, th, td, tr { 
+		  display: block; 
+	  }
+
+    thead tr { 
+      position: absolute; 
+      top: -9999px; 
+      left: -9999px;
+	  } 
+
+    tr{
+      border: 1px solid #ECECEC;
+    }
+    td { 
+      border: none;
+      border-bottom: 1px solid #ECECEC; 
+      position: relative;
+      padding-left: 50%; 
+      line-height: 35px;
+	  }
+
+    td:before { 
+      position: absolute;
+      top: 2px;
+      left: 6px;
+      padding-right: 10px;
+      white-space: nowrap;
+	  }
+
+    /* Label the data */
+	    td:nth-of-type(1):before { content: "DATE"; }
+	    td:nth-of-type(2):before { content: "CAMPAIGN"; }
+	    td:nth-of-type(3):before { content: "VIEW"; }
+	    td:nth-of-type(4):before { content: "ACTIONS"; }
   }
 `
 
@@ -138,12 +158,16 @@ const ActionImage = styled.img`
 
 const Section = styled.section`
   display:flex;
-  justify-content: space-evenly;
+  justify-content: space-between;
   article{
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
+  }
+  @media (min-width: 600px) {
+    padding-left: 10px;
+    padding-right: 10px;
   }
 `
 

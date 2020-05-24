@@ -9,7 +9,7 @@ const TabWrapper = styled.div`
   left: 20px;
   height: 44px;
   @media (min-width: 600px) {
-      width: 800px;
+      width: 1000px;
       top: 170px;
   }
 `
