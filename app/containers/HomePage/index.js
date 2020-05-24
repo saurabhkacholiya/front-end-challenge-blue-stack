@@ -28,6 +28,7 @@ import {
   closeModal,
   openScheduleCalendar,
   setTime,
+  closeCalendarModal,
 } from "./actions";
 import { diffBetweenCurrentDateAndGivenDate } from "../../utils/commonFunction";
 
@@ -56,6 +57,7 @@ function HomePage({
   calendarStatus,
   setTime,
   selectedDate,
+  closeCalendarModal,
 }) {
 
   useInjectReducer({ key, reducer });
@@ -86,6 +88,7 @@ function HomePage({
         calendarStatus={calendarStatus}
         setTime={setTime}
         selectedDate={selectedDate}
+        closeCalendarModal={closeCalendarModal}
       />
     </>
   );
@@ -107,6 +110,7 @@ export function mapDispatchToProps(dispatch) {
     openModal : () => dispatch(openModal()),
     openScheduleCalendar: (data) => dispatch(openScheduleCalendar(data)),
     setTime: (data) => dispatch(setTime(data)),
+    closeCalendarModal: () => dispatch(closeCalendarModal())
   };
 }
 

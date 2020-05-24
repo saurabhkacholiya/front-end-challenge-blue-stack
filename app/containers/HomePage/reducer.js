@@ -12,6 +12,7 @@ import {
   dummyData,
   SCHEDULE_CALENDAR,
   SET_TIME,
+  CLOSE_CALENDAR_MODAL,
 } from "./actions";
 
 export const initialState = {
@@ -50,8 +51,12 @@ const homePageReducer = (state = initialState, action) =>
             }
               return item
           })
-          draft.selectedDate = new Date(action.time)
+          // draft.selectedDate = new Date(action.time)
+          draft.selectedDate = new Date() // set current date
           draft.scheduleCalendarStatus= false
+        break;
+      case CLOSE_CALENDAR_MODAL:
+          draft.scheduleCalendarStatus = false
         break;
     }
   });

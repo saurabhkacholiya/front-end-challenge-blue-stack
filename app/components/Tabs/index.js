@@ -8,6 +8,10 @@ const TabWrapper = styled.div`
   top: 150px;
   left: 20px;
   height: 44px;
+  @media (min-width: 600px) {
+      width: 800px;
+      top: 170px;
+  }
 `
 const Tab = styled.span`
     font-family: Roboto;
@@ -15,6 +19,11 @@ const Tab = styled.span`
     font-weight: 500;
     font-size: 15px;
     padding: 0 10px 0 0;
+    @media (min-width: 600px) {
+      width: 178px;
+      font-size: 18px;
+    }
+
 `
 const SelectedTab = styled.span`
     position: relative;
@@ -31,6 +40,11 @@ const SelectedTab = styled.span`
       bottom: 15px;
       width: ${props => `${props.width}px`};
       left: 0;
+    }
+
+    @media (min-width: 600px) {
+      width: 178px;
+      font-size: 18px;
     }
 `
 const BorderDiv = styled.div`

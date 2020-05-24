@@ -85,3 +85,12 @@ export function setTime(time) {
     time,
   };
 }
+
+export const CLOSE_CALENDAR_MODAL = 'app/HomePage/CLOSE_CALENDAR_MODAL'
+export function closeCalendarModal() {
+  return {
+    type: CLOSE_CALENDAR_MODAL,
+  };
+}
+
+

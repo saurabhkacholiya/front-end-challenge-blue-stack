@@ -2,6 +2,8 @@ import React from "react";
 import styled from "styled-components";
 import Calendar from 'react-calendar';
 
+import closeImg from "../../images/close.png";
+
 const CalendarWrapper = styled.section`
     position: fixed; 
     z-index: 1;
@@ -11,6 +13,13 @@ const CalendarWrapper = styled.section`
     height: 100%;
     overflow: auto;
     background-color: rgba(0,0,0,0.2);
+    img{
+        position: absolute;
+        height: 25px;
+        width: 25px;
+        top: -11px;
+        right: -11px;
+    }
     article{
         padding: 20px;
         background: #FFFFFF;
@@ -23,12 +32,19 @@ const CalendarWrapper = styled.section`
         top: 50%;
         transform: translate(-50%,-50%);
     }
+    @media (min-width: 600px) {
+        article{
+           height: initial;
+           width: initial;
+        }
+    }   
 `
 
 export default function ScheduleCalendar({
     calendarStatus,
     setTime,
     selectedDate,
+    closeCalendarModal,
 }){
     if(!calendarStatus){
         return <></>
@@ -40,6 +56,9 @@ export default function ScheduleCalendar({
                     onChange={(date) => setTime(date.getTime())}
                     value={selectedDate}
                 />
+                <figure onClick={closeCalendarModal}>
+                    <img src={closeImg} alt="close img"/>
+                </figure>
             </article>
         </CalendarWrapper>
     )

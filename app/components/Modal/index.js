@@ -157,6 +157,11 @@ const ModalWrapper = styled.div`
         color: #181B34;
       }
     }
+    @media (min-width: 600px) {
+      .modal-details{
+        width:25%;
+      }
+    }
 `
 
 
